@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Styling for the footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .signup {
+            float: left;
+            width: 33.33%;
+        }
+
+        .signup h2, .signup p {
+            color: white;
+        }
+
+        .signup form {
+            display: flex;
+            align-items: center;
+        }
+
+        .signup input[type="email"] {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .signup button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .signup button:hover {
+            background-color: #45a049;
+        }
+
+        .links {
+            float: left;
+            width: 66.66%;
+            display: flex;
+        }
+
+        .column {
+            width: 33.33%;
+            float: left;
+        }
+
+        .column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .column h3 {
+            color: white;
+        }
+
+        .column a {
+            color: white; /* Màu chữ trắng */
+            text-decoration: none; /* Không gạch chân */
+        }
+
+        .footer::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        @media screen and (max-width: 768px) {
+            .links {
+                flex-wrap: wrap;
+            }
+
+            .column {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="signup">
+            <h2>Đăng ký Email tại đây</h2>
+            <form action="#">
+                <input type="email" placeholder="Email">
+                <button>Đăng ký</button>
+            </form>
+        </div>
+        <div class="links">
+            <div class="column">
+                <h3>Liên hệ công việc</h3>
+                <ul>
+                    <li><a href="#">Hồ sơ</a></li>
+                    <li><a href="#">Đơn hàng</a></li>
+                    <li><a href="#">Vị trí</a></li>
+                    <li><a href="#">Hỏi đáp</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Chính sách & Hỗ trợ</h3>
+                <ul>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Điều khoản</a></li>
+                    <li><a href="#">Chính sách hoàn trả</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Sản Phẩm</a></li>                    
+                    <li><a href="#">Dịch vụ</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p>Được làm bởi Hira</p>
+    </footer>
+</body>
+</html>
